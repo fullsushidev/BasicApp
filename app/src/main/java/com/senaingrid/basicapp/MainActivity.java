@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
         setContentView(R.layout.activity_main);
 
         Parse.initialize(new Parse.Configuration.Builder(this)
-            .applicationId("Your Back4app application ID")
-            .clientKey("You can find it on Features -> Core Settings -> Server")
+            .applicationId("tJwRGQo5o35MmvaRP8LXBm4MiQxR6NtSfqEUeIOt")
+            .clientKey("85JYt6o8NJ1ZOl03VRYzswI5jueNdh3r3mXTVrKR")
             .server("https://parseapi.back4app.com/").build()
         );
 
@@ -36,9 +36,7 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
 
         bt_login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // TODO: Code here executes on main thread after user presses button
-
-                ParseUser.logInInBackground("Username", "Password", new LogInCallback() {
+               ParseUser.logInInBackground("Username", "Password", new LogInCallback() {
                     @Override
                     public void done(ParseUser parseUser, ParseException e) {
                         if (parseUser != null) {
@@ -78,7 +76,8 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
                             //Register Fail
                             message.setText("Deu errado! reg");
                             //TODO:deletar msg de teste
-                            //get error by calling e.getMessage()
+                            //get error by calling
+                            e.getMessage();
                         }
                     }
                 });
