@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
 
                         } else {
                             //Login Fail
-                            message.setText("Deu errado! log");
+                            message.setText("Deu errado! Log");
                             //TODO:deletar msg de teste
                             //get error by calling
                             e.getMessage();
