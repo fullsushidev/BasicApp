@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
         setContentView(R.layout.activity_main);
 
         Parse.initialize(new Parse.Configuration.Builder(this)
-            .applicationId("tJwRGQo5o35MmvaRP8LXBm4MiQxR6NtSfqEUeIOt")
-            .clientKey("85JYt6o8NJ1ZOl03VRYzswI5jueNdh3r3mXTVrKR")
+            .applicationId("2vOhlYWATJIId7ITWtuaBVwVm7PAkOedwAc2ebbD")
+            .clientKey("BrktoCMEnioJPMrlbSKo9GdPUoGvaJob7c7lYWfa")
             .server("https://parseapi.back4app.com/").build()
         );
 
@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
                             //Login Fail
                             message.setText("Deu errado! log");
                             //TODO:deletar msg de teste
-                            //get error by calling e.getMessage()
+                            //get error by calling
+                            e.getMessage();
                         }
                     }
                 });
