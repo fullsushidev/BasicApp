@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file:///media/ingrid/DATA/DATA/Back4App/BasicApp/BasicApp.iml" filepath="/media/ingrid/DATA/DATA/Back4App/BasicApp/BasicApp.iml" />
+      <module fileurl="file:///media/ingrid/DATA/DATA/Back4App/BasicApp/app/app.iml" filepath="/media/ingrid/DATA/DATA/Back4App/BasicApp/app/app.iml" />
+    </modules>
+  </component>
+</project>
