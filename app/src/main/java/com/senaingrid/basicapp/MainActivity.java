@@ -42,16 +42,14 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
                         if (parseUser != null) {
                             //Login Successful
                             //You may choose what to do or display here
-                            message.setText("Deu certo! log");
                             //TODO:deletar msg de teste
                             //For example: Welcome + ParseUser.getUsername()
-
+                            message.setText(e.getMessage());
                         } else {
                             //Login Fail
-                            message.setText("Deu errado! Log");
                             //TODO:deletar msg de teste
                             //get error by calling
-                            e.getMessage();
+                            message.setText(e.getMessage());
                         }
                     }
                 });
@@ -70,15 +68,14 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
                     public void done(ParseException e) {
                         if (e == null) {
                             //Register Successful
-                            message.setText("Deu certo! reg");
-                            //TODO:deletar msg de teste
+                            //TODO: deletar msg de teste
                             //You may choose what to do or display here
+                            message.setText(e.getMessage());
                         } else {
                             //Register Fail
-                            message.setText("Deu errado! reg");
-                            //TODO:deletar msg de teste
+                            //TODO: deletar msg de teste
                             //get error by calling
-                            e.getMessage();
+                            message.setText(e.getMessage());
                         }
                     }
                 });
