@@ -34,17 +34,19 @@ public class MainActivity extends AppCompatActivity {     //same as ActionBarAct
         final EditText et_password = (EditText) findViewById(R.id.et_password);
         final TextView message = (TextView) findViewById(R.id.message);
 
+
         bt_login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                ParseUser.logInInBackground("Username", "Password", new LogInCallback() {
                     @Override
                     public void done(ParseUser parseUser, ParseException e) {
+                        final String username = parseUser.getUsername();
                         if (parseUser != null) {
                             //Login Successful
                             //You may choose what to do or display here
                             //TODO:deletar msg de teste
                             //For example: Welcome + ParseUser.getUsername()
-                            message.setText(e.getMessage());
+                            message.setText("Welcome" + username);
                         } else {
                             //Login Fail
                             //TODO:deletar msg de teste
